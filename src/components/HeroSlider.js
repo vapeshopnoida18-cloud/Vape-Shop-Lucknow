@@ -8,15 +8,15 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const SLIDES = [
   {
     id: 1,
-    desktopSrc: "/herosectionbanner/desktop-hero-banner-1.png",
-    mobileSrc: "/herosectionbanner/hero-banner-mobile.png",
+    desktopSrc: "/herosectionbanner/dextopbanner1.png",
+    mobileSrc: "/herosectionbanner/mobilebanner1.png",
     alt: "Vape Shop Lucknow — Premium Disposable Vapes, Pod Systems and Express 30-45 Min Delivery Across Lucknow",
     href: "#featured",
   },
   {
     id: 2,
-    desktopSrc: "/herosectionbanner/desktop-hero-banner-2.png",
-    mobileSrc: "/herosectionbanner/hero-banner-2-mobile.png",
+    desktopSrc: "/herosectionbanner/dextopbanner2.png",
+    mobileSrc: "/herosectionbanner/mobilebanner2.png",
     alt: "Vape Shop Lucknow — 100% Genuine Scratch QR Verified Vapes, E-Liquids and Instant UPI Payment",
     href: "#featured",
   },
@@ -87,7 +87,7 @@ export default function HeroSlider() {
                   alt={slide.alt}
                   fill
                   priority={idx === 0}
-                  sizes="(min-width: 1280px) 1280px, 100vw"
+                  sizes="(min-width: 1280px) 1280px, calc(100vw - 48px)"
                   className="object-cover"
                 />
               </Link>
@@ -113,7 +113,7 @@ export default function HeroSlider() {
                   alt={slide.alt}
                   fill
                   priority={idx === 0}
-                  sizes="100vw"
+                  sizes="(max-width: 767px) calc(100vw - 24px), 1px"
                   className="object-cover"
                 />
               </Link>

@@ -118,7 +118,7 @@ export default function ProductCatalog() {
                   <div className="relative aspect-square w-full overflow-hidden rounded-lg sm:rounded-xl bg-[#1e2223]/[0.03] border border-[#1e2223]/6">
                     <Link
                       href={`/product/${product.slug}`}
-                      className="block w-full h-full"
+                      className="relative block w-full h-full"
                     >
                       <Image
                         src={product.image}
