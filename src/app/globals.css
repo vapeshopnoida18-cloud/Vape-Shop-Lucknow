@@ -2,25 +2,84 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1e2223;
+  --secondary: #1e2223;
+  --gold: #c9a24d;
+  --gold-light: #e2c16b;
+  --gold-dark: #a67c2e;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 116px;
+}
+
+@layer utilities {
+  .section-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-padding {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1.35rem;
+      padding-bottom: 1.35rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1.75rem;
+      padding-bottom: 1.75rem;
+    }
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes announcement-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-announcement-marquee {
+  display: flex;
+  width: max-content;
+  animation: announcement-marquee 32s linear infinite;
+}
+
+.announcement-wrapper:hover .animate-announcement-marquee,
+.announcement-wrapper:focus-within .animate-announcement-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-announcement-marquee {
+    animation: none;
+  }
 }
