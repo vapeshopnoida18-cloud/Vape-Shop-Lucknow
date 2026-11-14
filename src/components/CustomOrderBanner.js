@@ -1,7 +1,7 @@
 import { FiExternalLink, FiBox } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "917726005950";
 
 export const customOrderSeo = {
   title: "Custom Vape Devices, Pod Cartridges & Coils | Vape Shop Lucknow",

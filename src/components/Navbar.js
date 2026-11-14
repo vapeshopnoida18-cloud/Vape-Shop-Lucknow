@@ -278,7 +278,7 @@ export default function Navbar() {
 
                 {/* WhatsApp Order CTA */}
                 <a
-                  href="https://wa.me/919999999999?text=Hi%20Vape%20Shop%20Lucknow%2C%20I%20would%20like%20to%20place%20an%20order."
+                  href="https://wa.me/917726005950?text=Hi%20Vape%20Shop%20Lucknow%2C%20I%20would%20like%20to%20place%20an%20order."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden sm:inline-flex items-center gap-2 h-10 px-4 rounded-full bg-[#1e2223] text-white text-[13px] font-semibold border border-[#C9A24D]/50 shadow-[0_4px_14px_rgba(30,34,35,0.18)] hover:bg-[#2a2f30] hover:border-[#E2C16B] hover:shadow-[0_6px_20px_rgba(201,162,77,0.28)] transition-all duration-200 whitespace-nowrap shrink-0"
@@ -376,7 +376,7 @@ export default function Navbar() {
 
               <div className="pt-2 border-t border-[#1e2223]/10 sm:hidden">
                 <a
-                  href="https://wa.me/919999999999?text=Hi%20Vape%20Shop%20Lucknow%2C%20I%20would%20like%20to%20place%20an%20order."
+                  href="https://wa.me/917726005950?text=Hi%20Vape%20Shop%20Lucknow%2C%20I%20would%20like%20to%20place%20an%20order."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full h-11 rounded-full bg-[#1e2223] text-[#E2C16B] text-sm font-semibold border border-[#C9A24D]/50"

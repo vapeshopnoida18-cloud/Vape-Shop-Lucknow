@@ -4,7 +4,7 @@ import { FiHeart, FiShoppingCart, FiX, FiPlus, FiMinus } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { useStore } from "@/context/StoreContext";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "917726005950";
 
 export default function StoreDrawers() {
   const {

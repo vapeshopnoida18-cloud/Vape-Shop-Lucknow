@@ -17,7 +17,7 @@ import {
 } from "@/data/products";
 import { useStore } from "@/context/StoreContext";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "917726005950";
 
 export const productCatalogSeo = {
   title: "Best Selling Vapes & Pod Kits in Lucknow | Vape Shop Lucknow",

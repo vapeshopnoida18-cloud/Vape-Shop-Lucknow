@@ -10,8 +10,8 @@ import {
 import { FaWhatsapp } from "react-icons/fa";
 import logo from "@/app/vape shop lucknow logo.png";
 
-const WHATSAPP_NUMBER = "919999999999";
-const WHATSAPP_DISPLAY = "+91 99999 99999";
+const WHATSAPP_NUMBER = "917726005950";
+const WHATSAPP_DISPLAY = "+91 77260 05950";
 
 const CATEGORIES = [
   { label: "Disposable Vapes", href: "/#featured" },

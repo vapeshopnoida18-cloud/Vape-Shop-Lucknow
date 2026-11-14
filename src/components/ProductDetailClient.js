@@ -19,7 +19,7 @@ import { FaStar, FaHeart, FaWhatsapp } from "react-icons/fa";
 import { getDiscountPercent } from "@/data/products";
 import { useStore } from "@/context/StoreContext";
 
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "917726005950";
 
 export default function ProductDetailClient({ product, relatedProducts }) {
   const { addToCart, toggleWishlist, isWishlisted, setCartOpen } = useStore();

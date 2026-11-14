@@ -19,7 +19,7 @@ const ANNOUNCEMENTS = [
   },
   {
     text: "21+ Adults Only • Need Help? Chat on WhatsApp",
-    href: "https://wa.me/919999999999?text=Hi%20Vape%20Shop%20Lucknow%2C%20I%20need%20help%20with%20an%20order.",
+    href: "https://wa.me/917726005950?text=Hi%20Vape%20Shop%20Lucknow%2C%20I%20need%20help%20with%20an%20order.",
     isExternal: true,
   },
 ];
