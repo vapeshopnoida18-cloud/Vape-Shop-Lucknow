@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://vapeshoplucknow.com";
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Vape Shop Lucknow | 100% Authentic Vapes, Pods & Express Delivery",
   description:
     "Vape Shop Lucknow — Order 100% genuine scratch-QR verified disposable vapes, pod systems, and premium e-liquids with 30–45 mins express delivery across all Lucknow sectors.",

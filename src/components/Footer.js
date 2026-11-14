@@ -14,19 +14,20 @@ const WHATSAPP_NUMBER = "917726005950";
 const WHATSAPP_DISPLAY = "+91 77260 05950";
 
 const CATEGORIES = [
-  { label: "Disposable Vapes", href: "/#featured" },
-  { label: "Smart Screen Vapes", href: "/#featured" },
-  { label: "Refillable Pod Kits", href: "/#featured" },
-  { label: "Nicotine Salts & Juices", href: "/#featured" },
-  { label: "Replacement Coils", href: "/#featured" },
+  { label: "Disposable Vapes", href: "/category/disposable-vapes" },
+  { label: "Smart Screen Vapes", href: "/category/disposable-vapes" },
+  { label: "Refillable Pod Kits", href: "/category/pod-kits" },
+  { label: "Nicotine Salts & Juices", href: "/category/nicotine-salts" },
+  { label: "Replacement Coils", href: "/category/coils-and-pods" },
 ];
 
 const LUCKNOW_AREAS = [
-  { label: "Vape Delivery Gomti Nagar", href: "/#lucknow-info" },
-  { label: "Vape Delivery Hazratganj", href: "/#lucknow-info" },
-  { label: "Vape Store Indira Nagar", href: "/#lucknow-info" },
-  { label: "Vape Delivery Aliganj", href: "/#lucknow-info" },
-  { label: "Vape Delivery Aminabad & Jankipuram", href: "/#lucknow-info" },
+  { label: "Vape Delivery Gomti Nagar", href: "/location/gomti-nagar" },
+  { label: "Vape Delivery Hazratganj", href: "/location/hazratganj" },
+  { label: "Vape Store Indira Nagar", href: "/location/indira-nagar" },
+  { label: "Vape Delivery Aliganj", href: "/location/aliganj" },
+  { label: "Vape Delivery Jankipuram", href: "/location/jankipuram" },
+  { label: "Vape Delivery Aminabad", href: "/location/aminabad" },
 ];
 
 const BRANDS = [

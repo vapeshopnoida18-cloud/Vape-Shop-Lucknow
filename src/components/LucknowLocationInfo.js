@@ -69,6 +69,18 @@ const BOTTOM_HIGHLIGHTS = [
   "Indian E-Cigarette Laws",
 ];
 
+const AREA_LINK_MAP = {
+  "Gomti Nagar": "/location/gomti-nagar",
+  "Hazratganj": "/location/hazratganj",
+  "Indira Nagar": "/location/indira-nagar",
+  "Aliganj": "/location/aliganj",
+  "Jankipuram": "/location/jankipuram",
+  "Mahanagar": "/location/mahanagar",
+  "Aminabad": "/location/aminabad",
+  "Vikas Nagar": "/location/vikas-nagar",
+  "Rajajipuram": "/location/rajajipuram",
+};
+
 export const locationInfoSeo = {
   title: "Vaping & E-Cigarette Information in Lucknow | Vape Shop Lucknow",
   description:
@@ -183,18 +195,33 @@ export default function LucknowLocationInfo() {
               Lucknow Localities Covered:
             </p>
             <ul className="flex flex-wrap gap-2 list-none m-0 p-0">
-              {activeTab.areas.map((area) => (
-                <li
-                  key={area}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-[#1e2223]/10 text-xs font-medium text-[#1e2223] shadow-2xs"
-                >
-                  <FiCheckCircle
-                    className="w-3.5 h-3.5 text-[#C9A24D] shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span>{area}</span>
-                </li>
-              ))}
+              {activeTab.areas.map((area) => {
+                const link = AREA_LINK_MAP[area];
+                return (
+                  <li key={area}>
+                    {link ? (
+                      <Link
+                        href={link}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-[#1e2223]/10 text-xs font-medium text-[#1e2223] shadow-2xs hover:border-[#C9A24D] hover:text-[#9A7422] transition-colors"
+                      >
+                        <FiCheckCircle
+                          className="w-3.5 h-3.5 text-[#C9A24D] shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span>{area}</span>
+                      </Link>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-[#1e2223]/10 text-xs font-medium text-[#1e2223] shadow-2xs">
+                        <FiCheckCircle
+                          className="w-3.5 h-3.5 text-[#C9A24D] shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span>{area}</span>
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
